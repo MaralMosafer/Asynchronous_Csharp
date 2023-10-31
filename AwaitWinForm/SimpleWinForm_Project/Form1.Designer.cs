@@ -34,34 +34,41 @@
             // 
             // Download_btn
             // 
-            Download_btn.Location = new Point(59, 38);
+            Download_btn.BackColor = SystemColors.ControlText;
+            Download_btn.Dock = DockStyle.Top;
+            Download_btn.FlatStyle = FlatStyle.Flat;
+            Download_btn.ForeColor = Color.White;
+            Download_btn.Location = new Point(0, 0);
             Download_btn.Name = "Download_btn";
-            Download_btn.Size = new Size(75, 23);
+            Download_btn.Size = new Size(391, 32);
             Download_btn.TabIndex = 0;
-            Download_btn.Text = "button1";
-            Download_btn.UseVisualStyleBackColor = true;
+            Download_btn.Text = "Show result";
+            Download_btn.UseVisualStyleBackColor = false;
             Download_btn.Click += Download_btn_Click;
             // 
             // result_lbl
             // 
-            result_lbl.AutoSize = true;
-            result_lbl.Location = new Point(280, 153);
+            result_lbl.Dock = DockStyle.Top;
+            result_lbl.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            result_lbl.Location = new Point(0, 32);
             result_lbl.Name = "result_lbl";
-            result_lbl.Size = new Size(38, 15);
+            result_lbl.Size = new Size(391, 57);
             result_lbl.TabIndex = 1;
-            result_lbl.Text = "label1";
+            result_lbl.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(391, 374);
             Controls.Add(result_lbl);
             Controls.Add(Download_btn);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "Form1";
-            Text = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Learn With Maral Mosafer";
+            Load += Form1_Load;
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
